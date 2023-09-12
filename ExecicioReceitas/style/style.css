@@ -1,0 +1,26 @@
+.nota{
+    padding-left: 40%;
+    width: 15%;
+    
+}
+
+.titulo{
+    display: flex;
+
+}
+
+tr,th,td{
+    border: 1px solid black;
+    text-align: left;
+}
+
+.receita{
+width: 40%;
+}
+
+p{
+    width: 70%;
+    text-align: right !important;
+    font-size: xx-small;
+}
+

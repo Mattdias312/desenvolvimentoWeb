@@ -1,0 +1,15 @@
+img{
+    width: 20%;
+    border: 10px solid rgba(108, 124, 19, 0.32);
+    border-radius: 10%;
+}
+
+table, tr, th, td{
+    border: 2px solid green;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: bisque;
+    color: blueviolet;
+}
