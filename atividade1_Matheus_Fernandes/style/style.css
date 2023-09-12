@@ -1,0 +1,43 @@
+li{
+    list-style-type: none;
+}
+
+.cachorro{
+    width: 24%;
+    margin-right: 20px;
+    border: 10px solid #9EB384;
+    border-radius: 10%;
+}
+
+.gato{
+    width: 20%;
+    border: 10px solid #9EB384;
+    border-radius: 10%;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0 0 20px 50px;
+}
+
+tr,th,td{
+    padding: 3px;
+    border: 2px solid #5D8679;   
+}
+
+a{
+    text-decoration: none;
+    font-style: italic;
+    color: #5D8679;
+    font-weight: bolder;
+}
+body{
+    background-color: #FAF1E4;
+    color: #435334;
+    font-family: 'PT Serif', serif;
+}
+
+main{
+    padding-top: 10px;
+    background-color: #CEDEBD;
+}
