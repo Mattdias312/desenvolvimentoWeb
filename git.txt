@@ -1,0 +1,21 @@
+inicaindo um git novo
+
+git init
+git status
+git add .
+git status
+git commit -m "mensagem"
+git push
+git config --global user.email "matheusf.dias12@gmail.com"
+git config --global user.name "Mattdias312"
+git push
+git remote add origin https://...
+git push
+
+
+git status
+git add .
+git status
+git commit -m "mensagem"
+git push
+
