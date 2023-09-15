@@ -1,11 +1,12 @@
 .nota{
-    padding-left: 40%;
-    width: 15%;
+    justify-content: right;
+    width: 70%;
     
 }
 
-.titulo{
+.nome_receita{
     display: flex;
+    width: 500px;
 
 }
 
@@ -14,13 +15,34 @@ tr,th,td{
     text-align: left;
 }
 
-.receita{
-width: 40%;
+table {
+    width: 50%;
 }
 
 p{
-    width: 70%;
+    width: 90%;
     text-align: right !important;
-    font-size: xx-small;
+    font-size: small;
 }
 
+.tempo{
+    width: 3%;
+    padding-right: 5px;
+}
+
+.rendimento{
+    width: 5%;
+    padding-right: 5px;
+}
+
+.favorito{
+    width: 5%;
+    padding-right: 5px;
+}
+.comentario{
+    width: 5%;
+}
+
+figure{
+    display: flex ;
+}
