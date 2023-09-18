@@ -173,16 +173,18 @@ button:hover {
 }
 
 main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: center;
 }
     
  header {
-    padding: 5px;
+    padding: 5px 0 5px 0;
     position: sticky;
     width: 100%;
     top: 0;
     background-color: lightgray;
 } 
+
+body{
+    margin: 0;
+}
