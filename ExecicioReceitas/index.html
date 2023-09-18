@@ -8,49 +8,91 @@
   </head>
   <body>
     <header>
-      <table>
-        <thead>
-          <tr>
-            <th class="nome_receita">
-              <h2>Receitas de Churros</h2>
-            </th>
-            <th>
-              <p>
-                <img class="nota" src="https://img.freepik.com/vetores-premium/icone-de-classificacao-de-cinco-estrelas-estrelas-de-avaliacao-vetor-estrelas-planas-isoladas_118339-1270.jpg?w=1380" alt="nota">
-              </p>
-              <p>Avaliação da receita</p>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <td colspan="2">
-                <figure>
-                  <img src="https://static.itdg.com.br/images/640-400/26d099dd5887204f191fc38c0c564f4e/366034-original.jpg"alt="Imagem de churros">
-                </figure>
-                <figcaption>bolinho de curros</figcaption>
-            </td>
-          </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-              <td>
-                <figure>
-                    <img class="tempo" src="img/preparo_icon.svg" alt="ícone de tempo">
-                    <img class="rendimento" src="img/rendimento_Icon.png" alt="Rendimento">
-                    <img class="favorito" src="img/favorito_icon.png" alt="Favorito">
-                    <img class="comentario" src="img/comentario_icon.png" alt="Favorito">
-                </figure>
-            </td>
-            <tr>
-                <td>
-                    <figcaption>Preparo</figcaption>
-                </td>
-            </tr>
-            </tr>
-        </tfoot>
-      </table>
+      <nav class="menu">
+        <ul class="menu__lista">
+            <li class="menu__item"><a class="menu__link"  href="#menu_receita">Receita</a></li>
+            <li class="menu__item"><a class="menu__link" href="#menu_ingredientes">Ingredientes</a></li>
+
+        </ul>
+      </nav>
     </header>
-    <main></main>
+
+    <main>
+      <section id="menu_receita" class="cabecalho">
+        <h2>Receitas de Churros</h2>
+        <p>
+          <img class="nota" src="https://img.freepik.com/vetores-premium/icone-de-classificacao-de-cinco-estrelas-estrelas-de-avaliacao-vetor-estrelas-planas-isoladas_118339-1270.jpg?w=1380" alt="nota">
+          <br>
+          Avaliação da receita
+        </p>
+      </section>
+      <section>
+        <figure class="imagem">
+          <img class="churros" src="https://static.itdg.com.br/images/640-400/26d099dd5887204f191fc38c0c564f4e/366034-original.jpg"alt="Imagem de churros">
+        </figure>
+      </section>
+
+      <section class="info">
+        <section>
+          <figure class="info_receita">
+            <img class=" tempo" src="img/preparo_icon.png" alt="Ícone de tempo">
+            <img class=" rendimento" src="img/rendimento_Icon.png" alt="Ícone de Rendimento">
+            <img class=" favorito" src="img/favorito_icon.png" alt="Ícone de Favorito">
+            <img class=" comentario" src="img/comentario_icon.png" alt="Ícone de Favorito">
+          </figure>
+        </section>
+
+        <section class="descricao_icone">
+          <figcaption class="descricao_icone descricao">Preparo</figcaption>
+          <figcaption class="descricao_icone descricao">Rendimento</figcaption>
+          <figcaption class="descricao_icone descricao">Favoritar</figcaption>
+          <figcaption class="descricao_icone descricao">Comentário</figcaption>
+        </section>
+
+        <section class="descricao_icone">
+          <figcaption class="descricao_icone conteudo_tempo">35 MIN</figcaption>
+          <figcaption class="descricao_icone conteudo">8 PORÇÕES</figcaption>
+          <figcaption class="descricao_icone conteudo">620</figcaption>
+          <figcaption class="descricao_icone conteudo_comentario">32</figcaption>
+        </section>
+      </section>
+
+
+      <section id="menu_ingredientes" class="ingredientes" >
+        <img class="avental" src="img/avental.png" alt="Ícone de avental">
+        <h1 class="ingredientes_titulo"> INGREDIENTES</h1>
+      </section>
+
+      <section>
+        <h3 class="titulo">MASSA</h3>
+        <ul class="itens">
+          <li>200ml de água</li>
+          <li>1 colher (sopa) de manteiga</li>
+          <li>4 colheres (sopa) de açúcar</li>
+          <li>1 colher (chá) de canela em pó</li>
+          <li>1 xícara de farinha de trigo</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="titulo">EMPANAMENTO</h3>
+        <ul class="itens">
+          <li>1 colher (sopa) de canela</li>
+          <li>1/2 xícara de açúcar</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="titulo">RECHEIO</h3>
+        <ul class="itens">
+          <li>150g de doce de leite</li>
+        </ul>
+      </section>
+    
+      <section class="botao">
+        <button><img class="comprar" src="img/compra_icon.png" alt="carrinho de compra">Comprar ingredientes</button>
+      </section>
+
+    </main>
   </body>
 </html>
