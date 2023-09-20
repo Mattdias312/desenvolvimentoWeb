@@ -12,9 +12,11 @@
     margin: 40px 0 10px 40px;
     display: flex;
     width: 900px;
+    align-items: flex-end;
 }
 
 h2{
+    width: 250px;
     color: #b97f00;
 }
 
@@ -27,75 +29,39 @@ h2{
 }
 
 p{
-    margin-left: 580px ;
+    margin-left: 550px ;
     text-align: right ;
-    font-size: small;
+    font-size: x-small;
 }
 
-.tempo{
-    cursor: pointer;
-    width: 40px;
-    margin-right: 180px;
-}
-
-.rendimento{
-    cursor: pointer;
-    width: 40px;
-    margin-right: 195px;
-}
-
-.favorito{
-    cursor: pointer;
-    width: 40px;
-    margin-right: 195px;
-}
-.comentario{
-    cursor: pointer;
-    width: 40px;
+.info_bloco{
+    width: 225px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
 }
 
 .info{
     margin-left: 40px;
     width: 900px;
     background-color: #f3f3f3;
+    font-weight: bold;
+    color: #ff6a28;
+    height: 180px;
+    display: flex;
 }
+
 
 .info_receita{
-    display: flex;
-    padding-top: 10px
-}
-
-.descricao_icone{
-    margin: 0 0 10px 0;
-    display: flex;
-    margin-left: 20px;
-}
-
-.descricao{
-    color: #b97f00;
+    display: flex;    
     cursor: pointer;
-    margin-right: 140px;
+    margin: 16px 0;
 }
 
-.conteudo{
-    font-weight: bold;
-    color: #ff6a28;
-    cursor: pointer;
-    margin-right: 150px;
-}
-
-.conteudo_tempo{
-    font-weight: bold;
-    color: #ff6a28;
-    cursor: pointer;
-    margin-right: 130px;
-}
-
-.conteudo_comentario{
-    font-weight: bold;
-    color: #ff6a28;
-    cursor: pointer;
-    margin-left: 60px;
+.icone{
+    width: 40px;
 }
 
 .ingredientes{
@@ -188,6 +154,7 @@ main{
 
 body{
     margin: 0;
+    font-family: 'Mooli', sans-serif;
 }
 
 footer{
