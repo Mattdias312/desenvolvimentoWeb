@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+</head>
+<body>
+    <main>
+        <label for="salario">Salário</label>
+        <input type="text" id="salario" name="Salario">
+        <label for="aumento">Percentual Aumento</label>
+        <input type="text" name="aumento" id="aumento">
+        <input type="button" value="Calcular"  onclick="calcular()">
+
+        <p id="resultado"></p>
+
+    </main>
+
+    <script>
+        function calcular(){
+            let salario = 0.00;
+            salario = parseFloat(document.getElementById('salario').value);
+            let aumento = 0.00;
+             aumento = parseFloat(document.getElementById('aumento').value);
+            let novoSalario = 0.00;
+            if(aumento < 1){
+                novoSalario = salario + (salario * aumento);
+            }
+            else{
+                novoSalario = salario + (salario *(aumento/100));
+            }
+
+            document.getElementById('resultado').innerHTML ="O novo salário é " + novoSalario.toFixed(2);
+
+        }
+    </script>
+</body>
+</html>
