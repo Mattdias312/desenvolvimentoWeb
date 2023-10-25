@@ -12,12 +12,21 @@
     <input type="text" name="nomeCli" id="nome">
 
     <label>Pacotes:</label>
-    <input type="radio" name="pacotes" value="1000" id=""><label >Pacote 1</label>
-    <input type="radio" name="pacotes" value="2000" id=""><label >Pacote 2</label>
-    <input type="radio" name="pacotes" value="3000" id=""><label >Pacote 3</label>
+    <input type="radio" name="pacotes" value="1000"><label >Pacote 1</label>
+    <input type="radio" name="pacotes" value="2000"><label >Pacote 2</label>
+    <input type="radio" name="pacotes" value="3000"><label >Pacote 3</label>
+
+    <br>
+    <label >Adicionais</label>
+    <input type="checkbox" name="alimentacao" value="300"><label>Alimentação</label>
+    <input type="checkbox" name="veiculo" value="150"><label>Veículo</label>
+    <input type="checkbox" name="translado" value="50"><label>Translado</label>
+    
     <br>
     <br>
-    <button onclick="calcularDesconto()">Calcular Pacote com desconto</button>
+    <button onclick="calcularTotalViagem()">Calcular Pacote</button>
+
+    <p id="resultado"></p>
 
 </body>
 </html>
