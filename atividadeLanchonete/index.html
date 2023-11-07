@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Atividade1 BS</title>
 </head>
 <body>
@@ -29,10 +30,10 @@
           <div class="row">
             <div class="col-md-6">
                 <label for="combos" class="form-label">Combos</label>
-                <select name="" id="combos" class="form-select">
-                    <option value="">XSaudável</option>
-                    <option value="">XTudo</option>
-                    <option value="">XGostoso</option>
+                <select name="combo" id="combos" class="form-select">
+                    <option value="20">XSaudável</option>
+                    <option value="50">XTudo</option>
+                    <option value="30">XGostoso</option>
                 </select>
             </div>
 
@@ -41,13 +42,13 @@
                     <label >Adicionais</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" name="bacon" id="Bacon" class="form-check-label">
+                    <input type="checkbox" value="2" name="bacon" id="Bacon" class="form-check-label">
                     <label for="Bacon" class="form-label">Bacon</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" name="cheddar" id="Cheddar" class="form-check-label">
+                    <input type="checkbox" value="2" name="cheddar" id="Cheddar" class="form-check-label">
                     <label for="Cheddar" class="form-label">Cheddar</label>
-                    <input type="checkbox" name="picles" id="Picles" class="form-check-label">
+                    <input type="checkbox" value="2" name="picles" id="Picles" class="form-check-label">
                     <label for="Picles" class="form-label">Picles</label>
                 </div>
             </div>
@@ -56,41 +57,35 @@
                     <label >Entrega ?</label>
                 </div>
                 <div class="form-check">
-                    <input type="radio" name="entrega" id="Viagem" class="form-check-label">
+                    <input type="radio" value="10" name="entrega" id="Viagem" class="form-check-label">
                     <label for="Viagem" class="form-label">Para viagem</label>
                 </div>
                 <div class="form-check">
-                    <input type="radio" name="entrega" id="Balcao" class="form-check-label">
+                    <input type="radio" value="0" name="entrega" id="Balcao" class="form-check-label">
                     <label for="Balcao" class="form-label">Balcão</label>
                 </div>
             </div>
           </div>
           <div class="row justify-content-center ">
             <div class="col-4">
-                <button class="btn btn-primary">Calcular</button>
+                <button class="btn btn-primary" onclick="calcular()">Calcular</button>
                 <button class="btn btn-primary">Novo pedido</button>
                 <button class="btn btn-primary">Recibo</button>
             </div>
           </div>
           <div class="row">
             <div class="col">
-                <label for="nome" class="form-label">Total a pagar:</label>
-                <input type="text" placeholder="Total R$" name="nome" id="nome" class="form-control" disabled>
+                <label for="valorTotal" class="form-label">Total a pagar:</label>
+                <input type="text" placeholder="Total R$" name="valorTotal" id="total" class="form-control" disabled>
             </div>
           </div>
           <div class="row">
             <div class="col">
-                <label for="nome" class="form-label">Descrição do pedido:</label>
-                <textarea placeholder="Descrição" name="" id="" cols="30" rows="10" class="form-control" disabled></textarea>
+                <label for="descricao" class="form-label">Descrição do pedido:</label>
+                <textarea placeholder="Descrição" name="descricao" id="descricao" cols="30" rows="10" class="form-control" disabled></textarea>
             </div>
           </div>
     </main>
-    <script>
-        function hora(){
-            d = new Date
-            document.getElementById('hora').innerHTML = d.toLocaleTimeString()
-        }setInterval(hora,1000);
-        
-    </script>
+    
 </body>
 </html>
