@@ -18,7 +18,7 @@ function calcular(){
         salarioLiquido = salarioBruto - desconto
     }
 
-    document.getElementById('resultado').innerHTML ="Osalário bruto é R$" + salarioBruto.toFixed(2) + " o desconto é R$" + desconto.toFixed(2) +" e o salário líquido é R$" + salarioLiquido.toFixed(2);
+    document.getElementById('resultado').innerHTML ="O salário bruto é R$" + salarioBruto.toFixed(2) + " o desconto é R$" + desconto.toFixed(2) +" e o salário líquido é R$" + salarioLiquido.toFixed(2);
 
 }
 
