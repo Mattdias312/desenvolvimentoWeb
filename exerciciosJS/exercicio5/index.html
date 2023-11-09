@@ -12,11 +12,11 @@
         <div class="row align-items-end">
             <div class="col-4">
                 <label class="form-label" for="distancia">Distância em Km</label>
-                <input class="form-control" type="text" id="distancia" name="distancia" onkeyup="maskDiastancia()">
+                <input class="form-control" type="text" id="distancia" name="distancia" onkeyup="mask('#distancia')">
             </div>
             <div class="col-4">
                 <label class="form-label" for="volume">Gasto em litros</label>
-                <input class="form-control" type="text" name="volume" id="volume" onkeyup="maskVolume()">
+                <input class="form-control" type="text" name="volume" id="volume" onkeyup="mask('#volume')">
             </div>
             <div class="col-2 ">
                 <button class="btn btn-primary" onclick="calcular()">Calcular</button>

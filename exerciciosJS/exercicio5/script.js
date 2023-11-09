@@ -11,14 +11,15 @@ function calcular(){
 
 }
 
-var inputDistancia = document.querySelectorAll('#distancia')[0];
-var inputVol = document.querySelectorAll('#volume')[0];
+
+
 let pontoDist = true
 let pontoVol = true
   
 
 
- function maskDiastancia(){
+ function maskDiastancia(id){
+var input = document.querySelectorAll(id)[0];
 var inputMask = function inputMask(elm) {
   elm.addEventListener('keypress', function(e) {
     if(e.keyCode < 47 || e.keyCode > 57) {
@@ -30,20 +31,5 @@ var inputMask = function inputMask(elm) {
     }
 }
 )};
-inputMask(inputDistancia);
- }
-
- function maskVolume(){
-    var inputMask = function inputMask(elm) {
-        elm.addEventListener('keypress', function(e) {
-          if(e.keyCode < 47 || e.keyCode > 57 ) {
-            e.preventDefault();
-          }
-          if((e.keyCode == 44 || e.keyCode == 46) && pontoVol){
-              elm.value += '.'
-              pontoVol = false
-          }
-      }
-      )};
-      inputMask(inputVol);
+inputMask(input);
  }
