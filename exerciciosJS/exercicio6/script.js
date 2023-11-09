@@ -17,8 +17,7 @@ function calcular(){
         desconto = refeicao * 1.5
         salarioLiquido = salarioBruto - desconto
     }
-        console.log(salarioBruto)
-        console.log(salarioLiquido)
+
     document.getElementById('resultado').innerHTML ="Osalário bruto é R$" + salarioBruto.toFixed(2) + " o desconto é R$" + desconto.toFixed(2) +" e o salário líquido é R$" + salarioLiquido.toFixed(2);
 
 }
