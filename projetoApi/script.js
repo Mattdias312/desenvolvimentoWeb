@@ -1,5 +1,9 @@
 elementoCep = document.getElementById('pesquisaCep')
 elementoEndereco = document.getElementById('pesquisaEndereco')
+let weatherKey = ''
+let bandeira = "https://flagsapi.com"
+let imgemCidade = "https://source.unsplash.com/1600x900/?";
+const apiClimaURL = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=${apiKey}&lang=pt_br`;
 
 elementoCep.addEventListener('click', async function(){
     document.getElementById('resultado').innerText = ""
