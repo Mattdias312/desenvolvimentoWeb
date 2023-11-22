@@ -1,0 +1,34 @@
+.fundo{
+    background-color: bisque;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fundo-valor{
+    background-color: darkkhaki;
+    margin-top: 20px !important;
+}
+
+.imagens{
+    width: 50%;
+    border: 2px solid orange;
+    border-radius: 45%;
+}
+img:hover{
+    width: 60%;
+}
+
+.espacamento{
+    margin-top: 20px !important;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1024px){
+    .mobile{
+        display: block !important;
+        margin: 20px auto; 
+    }
+    .imagens{
+        width: 150%;
+    }
+}
