@@ -2,11 +2,20 @@
     background-color: bisque;
     font-family: 'PT Serif', serif;
     font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .fundo-valor{
     background-color: darkkhaki;
     margin-top: 20px !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .imagens{
@@ -30,5 +39,18 @@ img:hover{
     }
     .imagens{
         width: 150%;
+    }
+    .fundo{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .fundo-valor{
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
